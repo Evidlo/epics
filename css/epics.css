@@ -3,7 +3,6 @@
 	min-width:300px;
 }
 
-
 /*Profile Container*/
 
 .container-profile .panel-heading{
@@ -24,7 +23,6 @@
 	width:100%;
 }
 
-
 /*Description Container*/
 
 .container-description .panel-heading{
@@ -35,8 +33,6 @@
 .container-profile .panel{
 	margin:2% 0 0 0;
 }
-
-
 
 .logo-profile{
 	min-width:300px 40%;
@@ -49,6 +45,7 @@
 /*Shared Container stuff*/
 
 .container{
+	min-width:600px;
 	width:55%;
 	margin:0 auto 0 auto;
 }
