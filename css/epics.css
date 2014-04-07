@@ -79,7 +79,12 @@
 	width:50%;
 	margin:0 auto 0 auto;
 }
+
 .img-thumbnail{
   padding: 4px;
 	width: 30%;
+}
+
+.table .left{
+	text-align:left;
 }
