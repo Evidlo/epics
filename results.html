@@ -31,13 +31,11 @@
 		
 		<div class="progress progress-striped active">
 			<div id="progress-bar" class="progress-bar" style="width: 0%"></div>
-			<!-- <script type="text/javascript">
-			document.getElementById('progress-bar').addEventListener("click", function(event) {
-			(function(event) {
-			alert("Hello?");
-			}).call(document.getElementById('click_me'), event);
-			});
-		</script> -->
+			<script type="text/javascript">
+				for (var i=0; i< 1000; i++)
+					if(i % 100 == 0)
+						document.getElementById('progress-bar').style.width = i.toString()+"%";
+		</script>
 		</div>
 
 		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
