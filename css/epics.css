@@ -73,6 +73,8 @@
 /*Container Hot topics*/
 
 .container-hot{
+	text-align:center;
+	display:inline-block;
 }
 
 .img-thumbnail{
