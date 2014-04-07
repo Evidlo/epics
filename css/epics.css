@@ -73,13 +73,10 @@
 /*Container Hot topics*/
 
 .container-hot{
-	width:50%;
-	margin:0 auto 0 auto;
 }
 
 .img-thumbnail{
-  padding: 4px;
-	width: 30%;
+	width: 31%;
 }
 
 .table .left{
