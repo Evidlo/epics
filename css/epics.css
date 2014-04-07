@@ -72,3 +72,7 @@
 .table td{
 	width:100%;
 }
+
+.table .left{
+	text-align:left;
+}
