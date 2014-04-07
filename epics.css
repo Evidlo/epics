@@ -1,0 +1,74 @@
+.container .btn-group{
+	width:40%;
+	min-width:300px;
+}
+
+
+/*Profile Container*/
+
+.container-profile .panel-heading{
+	background-color:#333;
+	font-size:14pt;
+	color:white;
+}
+
+.container-profile .panel{
+	margin:2% 0 0 0;
+}
+
+.logo-profile{
+	min-width:300px 40%;
+}
+
+.logo-profile img{
+	width:100%;
+}
+
+
+/*Description Container*/
+
+.container-description .panel-heading{
+	background-color:#333;
+	color:white;
+}
+
+.container-profile .panel{
+	margin:2% 0 0 0;
+}
+
+
+
+.logo-profile{
+	min-width:300px 40%;
+}
+
+.logo-profile img{
+	width:100%;
+}
+
+/*Shared Container stuff*/
+
+.container{
+	width:55%;
+	margin:0 auto 0 auto;
+}
+
+.container .horiz{
+	padding:0;
+	display:table;
+}
+.container .horiz li{
+	width:20%;
+	padding:1%;
+	display:table-cell;
+	vertical-align:top;
+}
+
+.table{
+	padding:5%;
+	margin:0;
+}
+
+.table td{
+	width:100%;
+}
