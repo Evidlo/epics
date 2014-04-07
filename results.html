@@ -31,14 +31,20 @@
 		
 		<div class="progress progress-striped active">
 			<div id="progress-bar" class="progress-bar" style="width: 0%"></div>
+			<!--Simulate loading -->
 			<script type="text/javascript">
-				var loadingBar = document.getElementById('progress-bar');
-				for (var i=0; i< 100000; i++)
-					if(i % 10000 == 0){
-						loadingBar.style.width = (i / 100).toString()+"%";
-						//TODO:Add post while updating progress bar
-					}
+			var loadingBar = document.getElementById('progress-bar');
+				for (var i=0; i < 5; i++){
+					window.setTimeout(function(){
+						loadingBar.style.width = (20*(i)).toString()+"%";
+						//TODO: ADD elements
+					}, 1500);
+				}
+
+			window.setTimeout(function(){
 				loadingBar.style.opacity = "0";
+			}, 2500);
+
 		</script>
 		</div>
 
