@@ -32,9 +32,13 @@
 		<div class="progress progress-striped active">
 			<div id="progress-bar" class="progress-bar" style="width: 0%"></div>
 			<script type="text/javascript">
-				for (var i=0; i< 1000; i++)
-					if(i % 100 == 0)
-						document.getElementById('progress-bar').style.width = i.toString()+"%";
+				var loadingBar = document.getElementById('progress-bar');
+				for (var i=0; i< 100000; i++)
+					if(i % 10000 == 0){
+						loadingBar.style.width = (i / 100).toString()+"%";
+						//TODO:Add post while updating progress bar
+					}
+				loadingBar.style.opacity = "0";
 		</script>
 		</div>
 
