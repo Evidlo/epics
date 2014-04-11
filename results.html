@@ -12,6 +12,7 @@
 			<script src="../js/bower_components/html5shiv/dist/html5shiv.js"></script>
 			<script src="../js/bower_components/respond/dest/respond.min.js"></script>
 		<![endif]-->
+
 	</head>
 	<body>
 
@@ -31,22 +32,45 @@
 		
 		<div class="progress progress-striped active">
 			<div id="progress-bar" class="progress-bar" style="width: 0%"></div>
+		</div>
+			<div class="container container-results">
+				<div class="panel panel-default">
+					<div class="panel-heading">Results</div>
+				</div>
+			<div class="result" id="result0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante lectus, malesuada a sapien vulputate, lobortis fringilla lorem. Duis libero enim, volutpat sed velit sed, ultricies mattis ante. Vivamus lacinia, tellus sed ornare bibendum, augue sem mollis sem, eu faucibus neque enim nec dui. Donec vitae lacinia libero, quis bibendum nibh. Nam pharetra neque id quam consectetur consequat. Nam ac porttitor lectus. Sed convallis ultrices lorem. Suspendisse at lacus nisl. Vivamus in nunc nec erat consequat malesuada vitae non massa. Donec vel rutrum ante. Curabitur tincidunt libero quis interdum commodo. Nulla eu iaculis turpis. In dapibus nisl eu libero interdum iaculis. </div>
+			<div class="result" id="result1">Morbi posuere erat massa, a vestibulum massa rhoncus eu. Fusce dapibus pharetra tempor. Aenean eget ligula interdum purus tincidunt tincidunt non eu augue. Praesent molestie aliquam mi, id dignissim quam facilisis varius. Vivamus venenatis commodo turpis ut aliquam. Integer adipiscing imperdiet mauris, eu volutpat orci condimentum id. Duis ultrices venenatis est at congue. Suspendisse auctor faucibus nisl, eleifend molestie dolor convallis nec. Mauris ullamcorper ante vel purus facilisis placerat. Cras vitae libero sem. Nullam ac condimentum neque. Nunc ac orci sit amet dolor iaculis condimentum. Phasellus venenatis odio et mauris auctor, non pulvinar justo accumsan. In hac habitasse platea dictumst. Vestibulum viverra dui et mi interdum, vel luctus mauris rutrum. </div>
+			<div class="result" id="result2">Morbi vulputate, leo non varius tristique, metus lorem posuere arcu, nec lobortis dui nisl eu turpis. Etiam condimentum accumsan ultrices. Cras eget arcu erat. Sed luctus a ligula eget luctus. Donec interdum justo in dolor volutpat ullamcorper. Duis eget libero eget felis consequat ultrices. Aliquam condimentum varius neque id sodales. Quisque bibendum ligula vel risus consectetur pretium. Nam quis nisi vehicula, rhoncus urna et, vehicula nibh. Duis eleifend rhoncus dolor, a dapibus lacus suscipit vel. Maecenas nec odio tortor. Aenean gravida nisl vel arcu euismod, id suscipit risus ornare. Praesent interdum leo pellentesque, fermentum nibh id, aliquet diam. In tempor posuere quam a tincidunt. Nunc quis nisi sapien. Duis tristique erat nunc, eget cursus risus interdum sit amet. </div>
+			<div class="result" id="result3">Pellentesque semper non magna eget hendrerit. Morbi magna felis, fringilla in tempus vel, vehicula sed enim. Nunc dui lacus, suscipit dignissim vehicula et, varius ut enim. Suspendisse ultricies vel quam a suscipit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam lobortis vel magna sit amet tincidunt. Morbi eget sapien felis. Nullam ut quam orci. Fusce consectetur fermentum est, sed rutrum neque scelerisque at. Integer non eleifend purus. Ut vitae convallis urna, et facilisis magna. Etiam quis purus eget odio facilisis consequat eu sed risus. Vivamus adipiscing iaculis nisi non euismod. Donec gravida porta euismod. Pellentesque ut semper nibh. Nulla tincidunt augue ut diam euismod imperdiet. </div>
+			<div class="result" id="result4">Etiam rhoncus ac nisi vitae mattis. Pellentesque tempus suscipit tortor in tempus. Cras rutrum et eros quis tempor. Maecenas sit amet lobortis risus, vel euismod ante. Nulla luctus ante sed nulla pulvinar bibendum. Ut ligula elit, gravida eu neque a, eleifend facilisis massa. Pellentesque sagittis, orci nec blandit vehicula, leo dolor aliquet massa, in pellentesque ligula lectus eu orci. Fusce dapibus est tortor, eu iaculis ligula tincidunt venenatis. Suspendisse semper fringilla convallis. Fusce aliquam, nisl eget commodo accumsan, lacus lacus lacinia lorem, ut molestie enim mauris nec tellus. </div>
+
+		</div>
+
 			<!--Simulate loading -->
 			<script type="text/javascript">
-			var loadingBar = document.getElementById('progress-bar');
-				for (var i=0; i < 5; i++){
+			
+			window.onload = function(){
+			    window.document.body.onload = init(); 
+			};
+			function init(){
+				var loadingBar = document.getElementById('progress-bar');
+				function update(i) {
 					window.setTimeout(function(){
-						loadingBar.style.width = (20*(i)).toString()+"%";
-						//TODO: ADD elements
+						loadingBar.style.width = (20 *(i + 1)).toString()+"%";
+						var res = "result" + i.toString();
+						document.getElementById(res).style.opacity = 1;
 					}, 1500);
 				}
 
-			window.setTimeout(function(){
-				loadingBar.style.opacity = "0";
-			}, 2500);
+				for (var i=0; i < 5; i++){
+					update(i);
+				}
 
+				window.setTimeout(function(){
+					loadingBar.style.opacity = "0";
+				}, 2500);
+		}
+		
 		</script>
-		</div>
 
 		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 		<script src="./js/bootstrap.min.js"></script>
