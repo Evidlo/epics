@@ -101,7 +101,7 @@
 
 /* Results Page */
 .result {
-	height: 120pt;
+	height: auto;
 	width: 100%;
 	opacity: 0;
 	margin-top: 10pt;
