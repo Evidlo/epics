@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>BoilerConnect</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="./css/bootstrap.css" media="screen">
+		<link rel="stylesheet" href="./css/bootswatch.min.css">
+		<link rel="stylesheet" href="./css/epics.css">
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="../js/bower_components/html5shiv/dist/html5shiv.js"></script>
+			<script src="../js/bower_components/respond/dest/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+
+		<div class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="./index.html" class="navbar-brand">BoilerConnect</a>
+				</div>
+				<div class="navbar-collapse collapse" id="navbar-main">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="../login/">Login</a></li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+		<div class="container container-profile">
+			<div class="panel panel-default">
+				<div class="panel-heading">Engineering Projects in Community Service</div>
+				<div class="panel-body">
+					<ul class="horiz">
+						<li>
+							<div class="well well-sm logo-profile">
+								<img id="profile-logo" src="https://engineering.purdue.edu/EPICS/GlobalAnnouncements/SpecialTopics/EPICS_Logo_11-8-2005.gif"></img>
+							</div>
+						</li>
+						<li>
+						  <table class="table table-hover table-striped ">
+							  <tr>
+							  <td class="left">Phone</td><td><input type="text" id ="field1" placeholder="012-345-6789" name="field1" class="phone"></td>
+							  </tr>
+							  <tr>
+							  <td class="left">Phone</td><td><input type="text" id ="field1" placeholder="012-345-6789" name="field1" class="phone"></td>
+							  </tr>
+							  <tr>
+							  <td class="left">Phone</td><td><input type="text" id ="field1" placeholder="012-345-6789" name="field1" class="phone"></td>
+							  </tr>
+						  </table>
+						</li>
+					</ul>
+				</div>
+			</div>	
+		</div>
+		<div class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="./index.html" class="navbar-brand">BoilerConnect</a>
+				</div>
+				<div class="navbar-collapse collapse" id="navbar-main">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="../login/">Login</a></li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+
+		<!------------------------------------------------>
+
+		<div class="container container-description">
+			<div class="panel panel-default">
+				<div class="panel-heading">Description</div>
+				<div class="panel-body">
+					<div class="well well-sm" style="width:100%;">
+						<textarea class="description" placeholder="Some text"></textarea>
+					</div>
+					<button id="save">Save</button>
+					<div id="status"></div>
+					<script type="text/javascript">
+						function save_options(){
+							var status = document.getElementById('status');
+							status.textContent = 'Options saved.';
+							setTimeout(function() {
+							  status.textContent = '';
+							}, 750);
+					}
+					document.getElementById('save').addEventListener('click',save_options);
+
+					</script>
+
+				</div>
+			</div>	
+		</div>
+	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/bootswatch.js"></script>
+	
+	</body>
+</html>
