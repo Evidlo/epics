@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>BoilerConnect</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="./css/bootstrap.css" media="screen">
+		<link rel="stylesheet" href="./css/bootswatch.min.css">
+		<link rel="stylesheet" href="./css/epics.css">
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="../js/bower_components/html5shiv/dist/html5shiv.js"></script>
+			<script src="../js/bower_components/respond/dest/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+
+		<div class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="./index.html" class="navbar-brand">BoilerConnect</a>
+				</div>
+				<div class="navbar-collapse collapse" id="navbar-main">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="../login.html">Login</a></li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+		<div class="container container-profile">
+			<div class="panel panel-default">
+				<div class="panel-heading">Find a Service Learning Group For You</div>
+				<div class="panel-body">
+					<div class="form-group">
+						Job Description:
+						<textarea class="form-control" id="inputDescription" placeholder="Tell us what you want us to help you with" rows="3"></textarea>
+					</div>
+			  
+					<div class="form-group">
+						Deadline:
+						<input class="form-control" id="inputDeadline" placeholder="mm/dd/yyyy">	
+					</div>
+					
+					<div class="form-group">
+						Skills Wanted:
+						<div class="panel-group" id="accordion">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseDesign">
+											Design
+										</a>
+									</h4>
+								</div>
+								<div id="collapseDesign" class="panel-collapse collapse">
+									<div class="panel-body">
+										<input type="checkbox" id="inputDesignWebsite"></input> Website<br>
+										<input type="checkbox" id="inputDesignInterior"></input> Interior<br>
+										<input type="checkbox" id="inputDesignProduct"></input> Product<br>
+										<input type="checkbox" id="inputDesignSoftware"></input> Software<br>
+										<input type="checkbox" id="inputDesignLandscape"></input> Landscape<br>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseFinance">
+											Finance
+										</a>
+									</h4>
+								</div>
+								<div id="collapseFinance" class="panel-collapse collapse">
+									<div class="panel-body">
+										<input type="checkbox" id="inputFinanceNonProfit"></input> Set Up Non-Profit<br>
+										<input type="checkbox" id="inputFinanceAccounting"></input> Accounting<br>
+										<input type="checkbox" id="inputFinanceBudget"></input> Budget<br>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseProgramming">
+											Programming
+										</a>
+									</h4>
+								</div>
+								<div id="collapseProgramming" class="panel-collapse collapse">
+									<div class="panel-body">
+										<input type="checkbox" id="inputProgrammingApplication"></input> Application<br>
+										<input type="checkbox" id="inputProgrammingWebsite"></input> Website<br>
+										<input type="checkbox" id="inputProgrammingMobile"></input> Mobile<br>
+										<input type="checkbox" id="inputProgrammingHardware"></input> Hardware<br>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseMedical">
+											Medical
+										</a>
+									</h4>
+								</div>
+								<div id="collapseMedical" class="panel-collapse collapse">
+									<div class="panel-body">
+										<input type="checkbox" id="inputMedicalNursing"></input> Nursing<br>
+										<input type="checkbox" id="inputMedicalPharmacy"></input> Pharmacy<br>
+										<input type="checkbox" id="inputMedicalEquipment"></input> Equipment<br>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a class="btn btn-primary pull-left">Submit</a>
+				</div>
+			</div>	
+		</div>
+
+		<!------------------------------------------------>
+	
+	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/bootswatch.js"></script>
+	
+	</body>
+</html>
