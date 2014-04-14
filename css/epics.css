@@ -125,6 +125,12 @@
 
 /* Survey Page */
 
+.panel-title a:active{
+	outline:none;
+	border:0;
+	text-decoration:none;
+}
+
 .panel-title a:focus{
 	outline:none;
 	border:0;
