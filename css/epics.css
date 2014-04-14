@@ -17,10 +17,12 @@
 
 .logo-profile{
 	min-width:300px 40%;
+	text-align: center;
 }
 
 .logo-profile img{
 	width:100%;
+	min-width: 50%;
 }
 
 /*Description Container*/
