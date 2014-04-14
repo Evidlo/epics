@@ -123,3 +123,26 @@
 	left: 0pt;
 }
 
+/* Survey Page */
+
+.panel-title a:visited{
+	outline:0;
+	text-decoration:none;
+}
+
+.panel-title a:active{
+	outline:0;
+	border:0;
+	text-decoration:none;
+}
+
+.panel-title a:before{
+/*	content: url('https://www.iconfinder.com/icons/68819/download/png/64');*/
+	content:"[+]";
+	margin:0 10px 0 0;
+	text-decoration:none;
+}
+
+.panel-title a:hover{
+	text-decoration:none;
+}
