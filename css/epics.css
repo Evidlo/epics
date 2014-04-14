@@ -125,13 +125,8 @@
 
 /* Survey Page */
 
-.panel-title a:visited{
-	outline:0;
-	text-decoration:none;
-}
-
-.panel-title a:active{
-	outline:0;
+.panel-title a:focus{
+	outline:none;
 	border:0;
 	text-decoration:none;
 }
