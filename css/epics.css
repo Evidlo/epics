@@ -117,6 +117,10 @@
 	-ms-transition: opacity 1s;
 }
 
+.result .horiz li{
+	width:auto;	
+	padding:8px;
+	}
 
 .container-results .panel-heading{
 	background-color:#333;
@@ -125,6 +129,11 @@
 	left: 0pt;
 }
 
+.result .horiz .logo-profile{
+	width:200px;
+	min-width:200px;
+	text-align: center;
+}
 /* Survey Page */
 
 .panel-title a:active{
