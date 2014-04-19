@@ -3,6 +3,12 @@
 	min-width:300px;
 }
 
+/*Front Page*/
+.container-front{
+	}
+.search{
+}
+
 /*Profile Container*/
 
 .container-profile .panel-heading{
@@ -47,7 +53,7 @@
 /*Shared Container stuff*/
 
 .container{
-	min-width:600px;
+	min-width:700px;
 	width:55%;
 	margin:0 auto 0 auto;
 }
