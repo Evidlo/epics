@@ -13,13 +13,14 @@
 		<div class="progress progress-striped active">
 			<div id="progress-bar" class="progress-bar" style="width: 0%"></div>
 		</div>
-		<div class="container container-results">
+		<div class="container container-profile">
 			<div class="panel panel-default">
 				<div class="panel-heading">Results</div>
-			</div>
-			<div class="result" id="result0" onclick="location.href='./profile.html';">
+				<div class="panel-body">
+			Select the groups you want to send your job information to and click submit.<br><br>
+			<div class="result" id="result0">
 				<div class="panel panel-default">
-					<div class="panel-heading">EPICS</div>
+					<div class="panel-heading"><input type="checkbox" id="inputEPICS"></input> EPICS</div>
 				</div>
 				<ul class="horiz">
 					<li>
@@ -31,9 +32,9 @@
 						<br><br><a href="./profile.html" class="btn btn-primary pull-left">Visit Profile</a>
 					</li>
 			</div>
-			<div class="result" id="result1" onclick="location.href='profile1.html';">
+			<div class="result" id="result1">
 				<div class="panel panel-default">
-					<div class="panel-heading">Engineers Without Borders</div>
+					<div class="panel-heading"><input type="checkbox" id="inputEWB"></input> Engineers Without Borders</div>
 				</div>
 				<ul class="horiz">
 					<li>
@@ -45,9 +46,9 @@
 						<br><br><a href="./profile1.html" class="btn btn-primary pull-left">Visit Profile</a>
 					</li>
 			</div>
-			<div class="result" id="result2" onclick="location.href='profile2.html';">
+			<div class="result" id="result2">
 				<div class="panel panel-default">
-					<div class="panel-heading">Purdue Air and Waste Management Association</div>
+					<div class="panel-heading"><input type="checkbox" id="inputPAWMA"></input> Purdue Air and Waste Management Association</div>
 				</div>
 				<ul class="horiz">
 					<li>
@@ -59,6 +60,8 @@
 						<br><br><a href="./profile2.html" class="btn btn-primary pull-left">Visit Profile</a>
 					</li>
 			</div>
+			
+			<br><a href="./profile2.html" class="btn btn-primary pull-left">Submit</a><br><br>
 			<!--
 			<div class="result" id="result3" onclick="location.href='profile.html';">
 				<div class="panel panel-default">
@@ -85,6 +88,8 @@
 					</li>
 			</div>
 			-->
+			</div>
+			</div>
 		</div>
 
 			<!--Simulate loading -->
