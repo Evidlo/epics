@@ -31,8 +31,7 @@
 				<div class="panel-body">
 					This is where you can provide the details to the assistance you are requesting.  We will try to match you with several potential groups that meet your needs.
 					<br><br>
-			  
-					
+
 					<div class="form-group">
 						First, expand and check all the skills you need:
 						<div class="panel-group" id="accordion">
@@ -52,6 +51,7 @@
 										<input type="checkbox" id="inputEngineeringComputer"></input> Computer<br>
 										<input type="checkbox" id="inputEngineeringIndustrial"></input> Industrial<br>
 										<input type="checkbox" id="inputEngineeringCivil"></input> Civil<br>
+										<input type="checkbox" id="inputEngineeringUnknown"></input> Don't Know<br>
 									</div>
 								</div>
 							</div>
@@ -70,6 +70,7 @@
 										<input type="checkbox" id="inputArtsLanguage"></input> Language and Communication<br>
 										<input type="checkbox" id="inputArtsForeign"></input> Foreign Language<br>
 										<input type="checkbox" id="inputArtsPainting"></input> Painting<br>
+										<input type="checkbox" id="inputArtsUnknown"></input> Don't Know<br>
 									</div>
 								</div>
 							</div>
@@ -86,6 +87,7 @@
 										<input type="checkbox" id="inputFinanceNonProfit"></input> Set Up Non-Profit<br>
 										<input type="checkbox" id="inputFinanceAccounting"></input> Accounting<br>
 										<input type="checkbox" id="inputFinanceBudget"></input> Budget<br>
+										<input type="checkbox" id="inputFinanceUnknown"></input> Don't Know<br>
 									</div>
 								</div>
 							</div>
@@ -103,6 +105,7 @@
 										<input type="checkbox" id="inputProgrammingWebsite"></input> Website<br>
 										<input type="checkbox" id="inputProgrammingAndroid"></input> Android<br>
 										<input type="checkbox" id="inputProgrammingIOS"></input> iOS<br>
+										<input type="checkbox" id="inputProgrammingUnknown"></input> Don't Know<br>
 									</div>
 								</div>
 							</div>
@@ -119,6 +122,7 @@
 										<input type="checkbox" id="inputMedicalNursing"></input> Nursing<br>
 										<input type="checkbox" id="inputMedicalPharmacy"></input> Pharmacy<br>
 										<input type="checkbox" id="inputMedicalEquipment"></input> Equipment<br>
+										<input type="checkbox" id="inputMedicalUnknown"></input> Don't Know<br>
 									</div>
 								</div>
 							</div>
@@ -135,28 +139,24 @@
 										<input type="checkbox" id="inputConstructionWood"></input> Woodworking<br>
 										<input type="checkbox" id="inputConstructionHouse"></input> Household<br>
 										<input type="checkbox" id="inputConstructionMetal"></input> Metalwork<br>
+										<input type="checkbox" id="inputConstructionUnknown"></input> Don't Know<br>
 									</div>
 								</div>
 							</div>
 
 						</div>
 					</div>
-					How long do you estimate this project will take?<br>
-					<li class="dropdown btn btn-primary" style="text-decoration:none;">
-							<a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:white;">
-								Timeframe <span class="caret"></span>
-							</a>
-							<ul class="dropdown-menu">
-								<li><a href="#dropdown1" data-toggle="tab">1 week</a></li>
-								<li><a href="#dropdown1" data-toggle="tab">2 weeks</a></li>
-								<li><a href="#dropdown1" data-toggle="tab">1 month</a></li>
-								<li><a href="#dropdown1" data-toggle="tab">3 months</a></li>
-								<li><a href="#dropdown1" data-toggle="tab">>6 months</a></li>
-								<li class="divider"></li>
-								<li><a href="#dropdown2" data-toggle="tab">Undefined/Unknown</a></li>
-							</ul>
-						</li>
-					<br>	<br>	
+					<div class="form-group">
+						How long do you estimate this project will take?
+							<select class="form-control">
+								<option>1 week</option>
+								<option>2 weeks</option>
+								<option>1 month</option>
+								<option>3 months</option>
+								<option>6 months or more</option>
+								<option>Unknown</option>
+							</select>
+					</div>
 					<div class="form-group">
 						Explain the assistance you require in detail.
 						<textarea class="form-control" id="inputDescription" placeholder="Tell us what you want us to help you with" rows="3"></textarea>
