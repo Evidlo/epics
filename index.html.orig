@@ -13,19 +13,13 @@
 			<div class="jumbotron">
 				<h1>Welcome to BoilerConnect</h1><br>
 				<div class="navbar-form" role="search">
-
-					<ul class="horiz">
-						<li>
-						<a class="btn btn-primary pull-left" style="margin-right:48px;" href="./survey.html">How can we help you?</a>
-						</li>
-						<li>
-						<div class="input-group" >
-							<input type="text" class="form-control" placeholder="Search for a specific group" id="name" name="name" value>
-							<div class="input-group-btn">
-								<button type="submit" class="btn btn-primary" onclick="window.location.href='results-search.html'">Search</button>
+					<a class="btn btn-primary pull-left" style="margin-right:48px;" href="./survey.html">How can we help you?</a>
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search for a specific group" id="name" name="name" value>
+						<div class="input-group-btn">
+							<button type="submit" class="btn btn-primary" onclick="window.location.href='results-search.html'">Search</button>
 						</div>
 					</div>
-					</li>
 				</div>
 			</div>
 			<div class="container-hot">
@@ -33,15 +27,10 @@
 				<div class="well well-sm logo-profile img-thumbnail"><a href="./profile1.html"><img src="img/ewb.png" class="img-thumbnail" alt="Alt Text here"></a></div>
 				<div class="well well-sm logo-profile img-thumbnail"><a href="./profile2.html"><img src="img/pawma0.png" class="img-thumbnail" alt="Alt Text here"></a></div>
 				<div class="well well-sm logo-profile img-thumbnail"><a href="./profile.html"><img src="https://engineering.purdue.edu/EPICS/GlobalAnnouncements/SpecialTopics/EPICS_Logo_11-8-2005.gif" class="img-thumbnail" alt="Alt Text here"></a></div>
-				<!--Div Second Row -->
-				<div class="well well-sm logo-profile img-thumbnail"><img src="img/acm.png" class="img-thumbnail" alt="Alt Text here"></div>	
-				<div class="well well-sm logo-profile img-thumbnail"><img src="img/ios.jpg" class="img-thumbnail" alt="Alt Text here"></div>
-				<div class="well well-sm logo-profile img-thumbnail"><img src="img/plug.png" class="img-thumbnail" alt="Alt Text here"></div>
-
 			</div>
 		</div>
+		<div style="height:50px;width:100%;background-color:grey;bottom:0px;">doop</div>
 	<!------------------------------------------------>	
 
-	<div id="footer"></div>	
 	</body>
 </html>
