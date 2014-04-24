@@ -178,15 +178,13 @@ html {
 /* Footer */
 
 #footer {
-	position:absolute;
 	bottom:0px;
 	width:100%;
 }
 
 .footer {
-	padding:20px;
+	padding:10px;
 	text-align:center;
 	width:100%;
 	background-color:grey;
-
 }
